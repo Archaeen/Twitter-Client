@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_content_layout_user_text_view_title"
+        android:id="@+id/tv_user"/>
+
+    <EditText
+        android:id="@+id/et_new_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_new_content_layout_user_edit_text_hint"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/tv_user"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_content_layout_message_text_view_title"
+        android:layout_below="@+id/et_new_user"
+        android:id="@+id/tv_message"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_counter"
+        android:layout_below="@id/et_new_user"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/et_new_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_new_content_layout_message_edit_text_hint"
+        android:inputType="textCapSentences|textMultiLine"
+        android:minLines="2"
+        android:maxLines="5"
+        android:layout_below="@id/tv_message"
+        android:maxLength="140"/>
+</RelativeLayout>

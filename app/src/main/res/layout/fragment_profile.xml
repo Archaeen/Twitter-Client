@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="de.andy.client.twitter.android.ProfileActivity"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_layout_height"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/castle"
+            android:layout_alignBottom="@+id/tv_user_name_profile"/>
+
+        <ImageView
+            android:layout_width="@dimen/image_view_width"
+            android:layout_height="@dimen/image_view_height"
+            android:layout_above="@+id/tv_user_name_profile"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/frankenstein"/>
+
+        <TextView
+            android:id="@+id/tv_user_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/item_space"
+            android:textColor="@color/background_material_light"
+            android:text="Frank N. Stein"
+            android:textSize="@dimen/preferences_text_view_title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tweet_counter"
+            android:text="13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tweet_counter"
+            android:text="@string/fragment_profile_text_view_tweets_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_following_counter"
+            android:layout_centerHorizontal="true"
+            android:text="7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_following_counter"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fragment_profile_text_view_following_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_follower_counter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="666"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_follower_counter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/fragment_profile_text_view_followers_title"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

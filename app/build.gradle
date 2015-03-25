@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    defaultConfig {
+        applicationId "de.andy.client.twitter.android"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.0'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.5.0'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.5.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+}

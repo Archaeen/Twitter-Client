@@ -1,0 +1,8 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="@string/activity_preferences_save_position_check_box_key"
+        android:title="@string/activity_preferences_save_position_check_box_title"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

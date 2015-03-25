@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Twitter Client for Android</string>
+
+    <!-- Main Activity -->
+    <string name="main_activity_alert_dialog_new_content_title">Create new tweet</string>
+    <string name="main_activity_alert_dialog_edit_content_title">Edit tweet</string>
+    <string name="main_activity_alert_dialog_delete_button">Delete</string>
+    <string name="main_activity_alert_dialog_delete_content_title">Delete this tweet?</string>
+    <string name="main_activity_found_position_toast">Found your position</string>
+    <string name="main_activity_searching_position_toast">Searching your position...</string>
+    <string name="main_activity_no_position_saved_toast">No position were saved</string>
+
+    <!-- Activity Main Menu Items -->
+    <string name="activity_main_menu_items_add_new_content">Add new tweet</string>
+    <string name="activity_main_menu_items_search_item_title">Search</string>
+    <string name="activity_main_menu_items_search_item_hint">Enter search term</string>
+    <string name="activity_main_menu_items_save_position_title">Settings</string>
+
+    <!-- Add new Content Layout -->
+    <string name="add_new_content_layout_user_text_view_title">User:</string>
+    <string name="add_new_content_layout_user_edit_text_hint">Enter User</string>
+    <string name="add_new_content_layout_message_text_view_title">Message:</string>
+    <string name="add_new_content_layout_message_edit_text_hint">Enter Message</string>
+
+    <!-- Map Activity -->
+    <string name="title_activity_map">MapActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Settings Activity -->
+    <string name="title_activity_preferences">Settings</string>
+
+    <!-- Activity Settings XML -->
+    <string name="activity_preferences_save_position_check_box_title">Save your position?</string>
+    <string name="activity_preferences_save_position_check_box_key">save_position_checkbox</string>
+    <string name="title_activity_tab_layout">@string/app_name</string>
+
+    <!-- Fragment Profile Layout -->
+    <string name="fragment_profile_text_view_tweets_title">TWEETS</string>
+    <string name="fragment_profile_text_view_following_title">FOLLOWING</string>
+    <string name="fragment_profile_text_view_followers_title">FOLLOWERS</string>
+
+    <!-- Main Fragment -->
+    <string name="main_fragment_tab_tweets_title">Tweets</string>
+    <string name="main_fragment_tab_profile_title">Profile</string>
+
+</resources>
